@@ -1,32 +1,45 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+	//While Loops
+	int i = 3;
+	while (i <= 33) {
+		cout << "" << i << endl;
+		i += 5;
+	}
+	char hungry;
+	cout << "do you want a donut?" << endl;
+	cin >> hungry;
 
-# Precompiled Headers
-*.gch
-*.pch
+	while (hungry == 'y') {
+		cout << "DONUT" << " ";
+		//choice == 0;
+	}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	while  (hungry != 'y') {
+		cout << "goodbye" << endl;
+	}
 
-# Fortran module files
-*.mod
-*.smod
+	//Switch Statements
+	char fishy;
+	cout << "Whats your favorite fish? (g) (b) (s) (c)" << endl;
+	cin >> fishy;
+	switch (fishy) {
+	case 'g':
+		cout << "you get a goldfish aka a Gilbert" << endl;
+		break;
+	case 'b':
+		cout << "you caught a bass" << endl;
+		break;
+	case 's':
+		cout << "you were bitten by a shark" << endl;
+		break;
+	case 'c':
+		cout << "you caught a cod fish but he doesn't seem do relate to the video game francise COD in any way" << endl;
+		break;
+	default:
+		cout << "you were crushed by a blue whale (me personally, I wouldn't let that happen)" << endl;
+	}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+}
